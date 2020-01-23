@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Chingu Solo Tier1</title>
+		<link rel="shortcut icon" type="image/jpg" href="imgs/favicon.jpg"/>
+		<link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri|Lato|Manjari|Montserrat|Open+Sans|Roboto|Roboto+Condensed&display=swap" rel="stylesheet"> 
+		<script src="https://kit.fontawesome.com/e0fc339167.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="tier1.css"> 
+	</head>
+	<body>
+		<div class="content">
+			<div class="header flex">
+				<img id="logo" src="imgs/logo.jpg"/>
+				<div class="minorNav flex">
+					<a href="/catalog">catalog</a>
+					<a href="/featured">featured</a>
+					<a href="/articles">articles</a>
+					<a href="/about">about</a>
+				</div>
+			</div>
+			<hr>
+			<div class="nav">
+				<input type="text" size="40" placeholder="Search fonts"></input>
+				<div class="flex hide">
+					<span> | &nbsp </span>
+					<input type="text" size="40" maxlength="100" placeholder="Type something" id="text_id" onkeyup="changeText()"></input>
+				</div>
+				<div class="flex hide">
+					<span> | &nbsp </span>
+					<select id="select_id" onchange="changeFontSize()">
+						<option value="20px" class="option">20px</option>
+						<option value="24px" class="option">24px</option>
+						<option value="32px" selected class="option">32px</option>
+						<option value="40px" class="option">40px</option>
+					</select>
+				</div>
+				<div class="hideDarkButtons">
+					<button class="round black" onclick="changeToDark()"></input>
+					<button class="round white" onclick="changeToWhite()"></input>
+				</div>
+				<button onclick="listGrid()" id="listOrGrid" class="hide">
+					<i class="fas fa-list-ul"></i>
+				</button>
+				<button onclick="resetMain()">
+					<i class="fas fa-redo"></i>
+				</button>
+			</div>
+			<div class="main flex">
+				<div class="card">
+					<hr>
+					<div class="font flex">
+						<div class="title">
+							<p class="fontName">Roboto</p>
+							<p class="fontCreator">Christian Robertson</p>
+						</div>
+						<p class="addFont">+</p>
+					</div>
+					<div class="sampleFont">
+						<p>Then came the night of the first failing star.</p>
+					</div>
+				</div>
+				<div class="card">
+					<hr>
+					<div class="font flex">
+						<div class="title">
+							<p class="fontName">Gayathri</p>
+							<p class="fontCreator">SMC</p>
+						</div>
+						<p class="addFont">+</p>
+					</div>
+					<div class="sampleFont">
+						<p>Then came the night of the first failing star.</p>
+					</div>
+				</div>
+				<div class="card">
+					<hr>
+					<div class="font flex">
+						<div class="title">
+							<p class="fontName">Chilanka</p>
+							<p class="fontCreator">SMC</p>
+						</div>
+						<p class="addFont">+</p>
+					</div>
+					<div class="sampleFont">
+						<p>Then came the night of the first failing star.</p>
+					</div>
+				</div>
+				<div class="card">
+					<hr>
+					<div class="font flex">
+						<div class="title">
+							<p class="fontName">Open Sans</p>
+							<p class="fontCreator">Steve Matteson</p>
+						</div>
+						<p class="addFont">+</p>
+					</div>
+					<div class="sampleFont">
+						<p>Then came the night of the first failing star.</p>
+					</div>
+				</div>
+				<div class="card">
+					<hr>
+					<div class="font flex">
+						<div class="title">
+							<p class="fontName">Lato</p>
+							<p class="fontCreator">Lukasz Dziedzic</p>
+						</div>
+						<p class="addFont">+</p>
+					</div>
+					<div class="sampleFont">
+						<p>Then came the night of the first failing star.</p>
+					</div>
+				</div>
+				<div class="card">
+					<hr>
+					<div class="font flex">
+						<div class="title">
+							<p class="fontName">Manjari</p>
+							<p class="fontCreator">Santhosh Thottingal</p>
+						</div>
+						<p class="addFont">+</p>
+					</div>
+					<div class="sampleFont">
+						<p>Then came the night of the first failing star.</p>
+					</div>
+				</div>
+				<div class="card">
+					<hr>
+					<div class="font flex">
+						<div class="title">
+							<p class="fontName">Montserrat</p>
+							<p class="fontCreator">Julieta Ulanovsky</p>
+						</div>
+						<p class="addFont">+</p>
+					</div>
+					<div class="sampleFont">
+						<p>Then came the night of the first failing star.</p>
+					</div>
+				</div>
+				<div class="card">
+					<hr>
+					<div class="font flex">
+						<div class="title">
+							<p class="fontName">Roboto Condensed</p>
+							<p class="fontCreator">Christian Robertson</p>
+						</div>
+						<p class="addFont">+</p>
+					</div>
+					<div class="sampleFont">
+						<p>Then came the night of the first failing star.</p>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<button onclick="backToTop()" id="backToTopButton"><i class="fas fa-arrow-circle-up fa-2x"></i></button>
+		<div class="footer">
+			<p>coded by MarcosMe | 2020 | Chingu Pre-Work Project Tier 1</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="tier1.js"></script>
+</html>
