@@ -164,8 +164,11 @@ select{
 
 @media only screen and (max-width: 768px) {
 	#searchFont{
-		width: 50%;;
+		width: 50%;
 	}	
+	#listOrGrid{
+		display:none;
+	}
 	.hideButtons{
 		display:none;
 	}
@@ -178,5 +181,8 @@ select{
 	.minorNav a{
 		font-size: 12px;
 		padding: 18px 2px 18px 2px;
+	}
+	#listOrGrid{
+		display:none;
 	}
 }
